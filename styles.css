@@ -1,0 +1,10 @@
+.wrapper {
+    align-items: center;
+    background-color: #3689E6;
+    height: 100vh !important;
+}
+
+.content-box {
+    background-color: #FFF;
+    border-radius: 6px;
+}
