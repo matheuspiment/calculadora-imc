@@ -3,6 +3,7 @@
     background-color: #3689E6;
     height: 100vh !important;
     justify-content: center;
+    min-height: 658px;
 }
 
 .content-box {
@@ -56,5 +57,15 @@
 
     .credits {
         display: none;
+    }
+}
+
+@media (max-height: 658px) {
+    .content-box {
+        margin-top: unset;
+    }
+
+    .footer {
+        position: relative!important;
     }
 }
