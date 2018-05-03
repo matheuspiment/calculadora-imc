@@ -37,8 +37,16 @@
     color: #222222;
 }
 
+.github-fork {
+    z-index: 1;
+}
+
 @media (max-width: 576px) {
     .content-box {
         margin-top: -50px;
+    }
+
+    .btn-icon {
+        display: none;
     }
 }
