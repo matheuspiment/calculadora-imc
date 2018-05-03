@@ -2,6 +2,7 @@
     align-items: center;
     background-color: #3689E6;
     height: 100vh !important;
+    justify-content: center;
 }
 
 .content-box {
@@ -19,4 +20,25 @@
     overflow: hidden;
     padding: 0px;
     width: 2.375rem;
+}
+
+.footer {
+    bottom: 0px;
+    color: #FFF;
+    position: absolute;
+    
+}
+
+.heart {
+    color: #F74933;
+}
+
+.org-link {
+    color: #222222;
+}
+
+@media (max-width: 576px) {
+    .content-box {
+        margin-top: -50px;
+    }
 }
