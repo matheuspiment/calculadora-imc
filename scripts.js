@@ -3,11 +3,12 @@ $(document).ready(function(){
         var altura = $('#altura').val();
         var peso = $('#peso').val();
         var imc = peso / (altura * altura);
-        swal(
-            'Resultado',
-            "Seu IMC é " + imc.toFixed(2) + " e sua categoria é " + getIMCCategory(imc).toUpperCase(),
-            'info'
-        );
+        swal({
+            type: 'info',
+            title: 'Resultado',
+            text: "Seu IMC é " + imc.toFixed(2) + " e sua categoria é " + getIMCCategory(imc).toUpperCase(),
+            showCloseButton: true,
+        });
         event.preventDefault();
     });
 })
@@ -43,6 +44,17 @@ function getIMCCategory(imc) {
 function showIMCTable() {
     swal({
         imageUrl: 'img/table-imc.png',
-        imageAlt: 'Tabela IMC'
+        imageAlt: 'Tabela IMC',
+        showCloseButton: true,
       })
+}
+
+function moreInfo() {
+    swal({
+        type: 'info',
+        title: 'Ímdice de Massa Corporal',
+        text: 'IMC é a sigla para Índice de Massa Corporal que serve para avaliar o peso do indivíduo em relação à sua altura e assim indicar se está dentro do peso ideal, acima ou abaixo do peso desejado.',
+        footer: '<a href="http://apps.who.int/bmi/index.jsp?introPage=intro_3.html">Click aqui para saber mais</a>',
+        showCloseButton: true,
+    });
 }

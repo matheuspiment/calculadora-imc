@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 
     <title>Calculadora IMC</title>
@@ -14,7 +15,15 @@
   <body class="d-flex wrapper">
     <div class="container">
         <div class="col-md-6 offset-md-3 p-4 content-box">
-            <h1 class="text-center">Calculadora IMC</h1>
+            <button type="button" class="btn btn-info float-right btn-icon" onclick="moreInfo()">
+                <i class="far fa-question-circle"></i>
+            </button>
+            <div class="text-center">
+                <h1 class="text-center">Calculadora IMC</h1>
+                <p class="lead">
+                    Uma medida da gordura corporal em adultos
+                </p>
+            <div>
             <form class="mt-4" id="formulario">
                 <div class="form-group row">
                     <label for="altura" class="col-sm-3 col-form-label">Altura (m)</label>
@@ -28,27 +37,8 @@
                         <input class="form-control" id="peso" type="number" step="any" min="2.00" max="300" placeholder="65.45" required>
                     </div>
                 </div>
-                <fieldset class="form-group">
-                    <div class="row">
-                        <legend class="col-form-label col-sm-3 pt-0">Gênero</legend>
-                        <div class="col-sm-9">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked required>
-                                <label class="form-check-label" for="masculino">
-                                    Masculino
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genero" id="feminino" value="feminino" required>
-                                <label class="form-check-label" for="feminino">
-                                    Feminino
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
                 <div class="form-group row">
-                    <div class="col text-center">
+                    <div class="col text-center mt-2">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
                         <button type="button" class="btn btn-link mt-2" onclick="showIMCTable()">Ver tabela IMC</button>
                     </div>

@@ -7,4 +7,16 @@
 .content-box {
     background-color: #FFF;
     border-radius: 6px;
+    box-shadow: 0 5px 30px 5px rgba(0,0,0,.2);
+}
+
+.btn-icon {
+    border-width: 1px;
+    border-radius: 30px!important;
+    font-size: 1.25rem;
+    height: 2.375rem;
+    min-width: 2.375rem;
+    overflow: hidden;
+    padding: 0px;
+    width: 2.375rem;
 }
