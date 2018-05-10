@@ -1,9 +1,8 @@
 .wrapper {
     align-items: center;
     background-color: #3689E6;
-    height: 100vh !important;
+    height: 698px;
     justify-content: center;
-    min-height: 698px;
 }
 
 .content-box {
@@ -57,7 +56,11 @@
     }
 }
 
-@media (min-height: 698px) {
+@media (min-height: 672px) {
+    .wrapper {
+        height: 100vh!important;
+    }
+
     .footer {
         position: absolute!important;
     }
