@@ -15,6 +15,7 @@
 .btn-icon {
     border-width: 1px;
     border-radius: 30px!important;
+    display: none;
     font-size: 1.25rem;
     height: 2.375rem;
     min-width: 2.375rem;
@@ -26,8 +27,7 @@
 .footer {
     bottom: 0px;
     color: #FFF;
-    position: absolute;
-    
+    position: relative;
 }
 
 .heart {
@@ -43,29 +43,22 @@
 }
 
 .credits {
+    display: none;
     font-size: 12px;
 }
 
-@media (max-width: 576px) {
-    .content-box {
-        margin-top: -50px;
-    }
-
+@media (min-width: 576px) {
     .btn-icon {
-        display: none;
+        display: block;
     }
 
     .credits {
-        display: none;
+        display: block;
     }
 }
 
-@media (max-height: 698px) {
-    .content-box {
-        margin-top: unset;
-    }
-
+@media (min-height: 698px) {
     .footer {
-        position: relative!important;
+        position: absolute!important;
     }
 }
